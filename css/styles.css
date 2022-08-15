@@ -1,0 +1,112 @@
+:root {
+	--body-background-color: #F2EAE2;
+	--dark-green: #1A4032;
+	--light-green: #3D8168;
+	--ff-body: 'Montserrat', sans-serif;
+	--ff-headlines: 'Fraunces', serif;
+	--gray100: #fff;
+	--body-color: #6C7289;
+	--headline-color: #1C232B;	
+}
+
+body {
+	background-color: var(--body-background-color);
+	color: var(--body-color);
+	font-family: var(--ff-body);
+    font-size: 16px;
+	font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5em 1em;
+}
+/* flex or grid */
+@media (min-width: 660px) {
+    .even-columns {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+img {
+	border-radius: .5em .5em 0 0;
+}
+.border-radius {
+	border-radius: 0 0 .5em .5em;
+}
+@media (min-width: 660px) {
+	img {
+	border-radius: .5em 0 0 .5em;
+	}
+	.border-radius {
+	border-radius: 0 .5em .5em .0;
+	}
+}
+.product-type {
+	font-family: var(--ff-body);
+	font-size: .75rem;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.product-headline {
+	color: var(--headline-color);
+	font-family: var(--ff-headlines);
+	font-weight: 700;
+	line-height: 2rem;
+	font-size: 2rem;
+	max-width: 15ch;
+}
+@media (min-width: 660px) {
+	.product-headline {
+	max-width: 10ch;
+	}
+}
+.product-description {
+	font-size: .875rem;
+	line-height: 23px;
+}
+.price {
+	display: flex;
+	align-items: center;
+}
+.sale-price {
+	color: var(--light-green);
+	font-family: var(--ff-headlines);
+	font-size: 2rem;
+}
+.retail-price {
+	color: var(--body-color);
+	font-family: var(--ff-body);
+	font-size: .812rem;
+	margin-left: 19px;
+}
+
+/* Buttons */
+.btn-primary {
+	color: #fff;
+	background-color: var(--light-green);
+	border-color: var(--light-green);
+	font-size: .875rem;
+	transition: all 0.4s ease;
+}
+.btn-primary:hover {
+	background-color: var(--dark-green);
+	border-color: var(--dark-green);
+}
+.bi.bi-cart3 {
+	margin-right: .75em;
+}
+.btn {
+	font-weight: 700;
+	padding: .9375rem .75rem;
+	width: 100%;
+}
+
+.container {
+	max-width: 630px;
+}
+.bg-gray100 {
+	background-color: var(--gray100);
+}
