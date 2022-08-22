@@ -22,14 +22,28 @@ body {
     min-height: 100vh;
     padding: 5em 1em;
 }
-/* flex or grid */
-@media (min-width: 660px) {
-    .even-columns {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-    }
+.container {
+	max-width: 40rem;
 }
+
+.attribution {
+	color: #636a82;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.rounded-top {
+	border-top-left-radius: 0.5rem !important;
+	border-top-right-radius: 0.5rem !important;
+}
+.rounded-bottom {
+	border-bottom-right-radius: .5rem !important;
+	border-bottom-left-radius: .5rem !important;
+}
+
 img {
 	border-radius: .5em .5em 0 0;
 }
@@ -44,6 +58,11 @@ img {
 	border-radius: 0 .5em .5em .0;
 	}
 }
+.column-two {
+	align-items: center;
+	display: grid;
+	background-color: white;
+}
 .product-type {
 	font-family: var(--ff-body);
 	font-size: .75rem;
@@ -52,10 +71,10 @@ img {
 }
 .product-headline {
 	color: var(--headline-color);
-	font-family: var(--ff-headlines);
+	font-family: var(--ff-headlines);		
+	font-size: 2rem;
 	font-weight: 700;
 	line-height: 2rem;
-	font-size: 2rem;
 	max-width: 15ch;
 }
 @media (min-width: 660px) {
@@ -66,9 +85,12 @@ img {
 .product-description {
 	font-size: .875rem;
 	line-height: 23px;
+	max-width: 26ch;
 }
+
 .price {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 .sale-price {
@@ -83,30 +105,13 @@ img {
 	margin-left: 19px;
 }
 
-/* Buttons */
-.btn-primary {
+.btn-success {
 	color: #fff;
-	background-color: var(--light-green);
-	border-color: var(--light-green);
-	font-size: .875rem;
-	transition: all 0.4s ease;
+	background-color: #3D8168;
+	border-color: #3D8168;
 }
-.btn-primary:hover {
-	background-color: var(--dark-green);
-	border-color: var(--dark-green);
-}
-.bi.bi-cart3 {
-	margin-right: .75em;
-}
-.btn {
-	font-weight: 700;
-	padding: .9375rem .75rem;
-	width: 100%;
-}
-
-.container {
-	max-width: 630px;
-}
-.bg-gray100 {
-	background-color: var(--gray100);
+.btn-success:hover {
+	color: #fff;
+	background-color: #1A4032;
+	border-color: #1A4032;
 }
