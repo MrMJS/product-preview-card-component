@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- displays site properly based on user's device -->
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<title>Frontend Mentor Product preview card component • Warehouse827</title>
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!-- Bootstrap Icons CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<!-- Custom CSS custom -->
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div class="container">
-    <main>
-        <div class="row">
-            <div class="column-one col-sm-6 px-0">
-                <picture>
-                    <source media="(min-width:576px)" srcset="images/image-product-desktop.jpg">
-                    <img class="img-fluid border-3 border-bottom-0" src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum" /></picture>
-            </div>
-            <div class="column-two col-sm-6 py-3 px-4 bg-white border-radius">
-				<p class="product-type mt-3">perfume</p>
-                <h1 class="product-headline mb-4">Gabrielle Essence Eau De Parfum</h1>
-                <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-                    Perfumer-Creator for the House of CHANEL.</p>
-                <p class="price mb-3"><span class="sale-price">$149.99</span> <span class="retail-price"><s>$169.99</s></span></p>
-                <a href="#" class="btn btn-success d-block mt-3 py-3"><i class="bi bi-cart3 me-2"></i>Add to Cart</a> </div>
-        </div>
-    </main>
-    <footer class="attribution mt-3"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.frontendmentor.io/profile/warehouse827">Warehouse 827</a>. </footer>
-</div>
-
-<!-- Bootstrap Bundle with Popper --> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor Product preview card component • Warehouse827</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS custom -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="grt">
+      <div class="d-grid">
+        <figure role="none">
+          <picture>
+            <source
+              media="(min-width:576px)"
+              srcset="images/image-product-desktop.jpg" />
+            <img
+              class="img-fluid mb-0"
+              src="images/image-product-mobile.jpg"
+              alt="Gabrielle Essence Eau De Parfum"
+          /></picture>
+        </figure>
+        <main class="border-radius">
+          <p class="product-type mb-0">perfume</p>
+          <h1 class="product-headline">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product-description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <h2 class="sale-price">$149.99</h2>
+            <p class="retail-price">$169.99</p>
+          </div>
+          <a class="add-to-card" href="#" role="button"
+            ><i class="bi bi-cart3 me-2" role="presentation"></i> Add to Cart</a
+          >
+        </main>
+      </div>
+      <footer>
+        <small>
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            aria-label="Frontend Mentor Challence Link. Opens in new window"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/warehouse827"
+            aria-label="Warehouse 827 Link. Opens in new window"
+            >Warehouse 827</a
+          >.
+        </small>
+      </footer>
+    </div>
+  </body>
 </html>
